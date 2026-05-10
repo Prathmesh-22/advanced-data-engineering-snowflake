@@ -1,39 +1,38 @@
-## Advanced Data Engineering with Snowflake
+# Snowflake Data Engineering Pipeline 🚀
 
-#### How to use this repo throughout the course:
+An end-to-end cloud-native Data Engineering project built on Snowflake to explore modern analytics engineering workflows including data ingestion, transformation, orchestration, observability, CI/CD, and reporting.
 
-To successfully follow along with the instructor during the course, you'll need to make use of the code in this repo. To follow along, you can either:
+---
 
-* Keep the URL to this repo handy, so that you can easily find and use any code referenced by the instructor during the course
+# 📌 Project Overview
 
-* Clone the repo to your local computing environment (required)
+This project demonstrates how modern data pipelines can be designed and managed using Snowflake and cloud-native tooling.
 
-> **Note:** There are a couple of exercises that make use of Snowflake's command line interface, Snowflake CLI. To successfully follow along during those exercises, you'll need to have the repo cloned to your local computing environment, so that the Snowflake CLI can make use of files and code within this repo.
+The pipeline includes:
 
-#### How to clone the repo to your local computing environment:
+- Data ingestion and transformation using SQL & Python
+- Incremental processing with Streams and Tasks
+- Dynamic Tables for automated transformations
+- Snowpark Python stored procedures
+- CI/CD automation using GitHub Actions and Snowflake CLI
+- Data quality monitoring and automated email alerts
+- Observability using logs, traces, spans, and event tables
+- Streamlit dashboard for analytics and visualization
 
-1. Fork the repo to create a copy associated with your GitHub Account: https://github.com/Snowflake-Labs/advanced-data-engineering-snowflake/fork
+---
 
-2. Clone your fork:
+# 🏗️ Architecture
 
-```bash
-git clone https://github.com/<your-GitHub-user-name>/modern-data-engineering-snowflake.git
-```
+The pipeline follows a modular cloud-native architecture:
 
-Where `<your-GitHub-user-name>` is replaced by your GitHub user name. This workflow is covered in the course.
+1. Source data ingestion into Snowflake
+2. Transformation and processing using SQL + Snowpark
+3. Incremental updates using Streams & Tasks
+4. Automated orchestration workflows
+5. Data quality validation and monitoring
+6. Observability tracking using event tables and logs
+7. Dashboard visualization using Streamlit
 
-You can then open the repo in your preferred code editor. Throughout the course, the instructor will use Visual Studio Code as the code editor.
-
-#### How to navigate this repo
-
-All of the code that you need to successfully complete the course is within this repo. Each folder in this repo corresponds to a module in the online course.
-
-* **module-1** – Corresponds to "Module 1: DevOps with Snowflake" in the course.
-
-* **module-2** – Corresponds to "Module 2: Observability with Snowflake" in the course.
-
-The course instructor will also be sure to reference the exact folder and name of the file to use throughout the course, so that you can follow along.
-
-#### Reporting issues or errata
-
-If you encounter technical issues with this code as you complete the course (i.e. typos, missing code, broken links, etc.), please report those issues in the course through Coursera. Ensure the issue contains sufficient detail so that it can be properly addressed.
+<p align="center">
+  <img src="Snowflake_Architecture.png" alt="Snowflake Architecture" width="900"/>
+</p>
